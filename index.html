@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling 2 Uppgift 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready
+    (
+        function()
+    {
+$("#button2").click(
+    function()
+    {
+        $("#button1").animate({
+left: '350px',
+top: '350px'
+        });
+
+    }
+);
+
+$("#button1").click(
+    function()
+    {
+        $("#button2").animate({
+            height: '+=300px',
+            width: '+=300px'
+        });
+    }
+);
+
+    }
+    );
+</script>
+
+</head>
+<body>
+    <input type="button" value="Knapp 1" id="button1" style="position:absolute;">
+<input type="button" value="Knapp 2" id="button2" style="position:absolute; left:100px">
+</body>
+</html>
